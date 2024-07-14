@@ -1,0 +1,247 @@
+:root {
+    --bg-color: #0f0f23;
+    --text-color: #e0e0e0;
+    --primary-color: #1a1a2e;
+    --secondary-color: #16213e;
+    --accent-color: #0f3460;
+    --input-bg: #2c2c3a;
+    --input-border: #444456;
+    --btn-color: #4a69bd;
+    --btn-hover: #6a89cc;
+    --delete-btn: #eb2f06;
+    --delete-btn-hover: #ff3f34;
+    --intel-color: #0071c5;
+    --amd-color: #ed1c24;
+    --arm-color: #83b81a;
+}
+
+body {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: var(--accent-color);
+    margin-top: 0;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.provider {
+    background-color: var(--primary-color);
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.provider:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.package {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.package::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: var(--accent-color);
+}
+
+.package.intel::before {
+    background-color: var(--intel-color);
+}
+
+.package.amd::before {
+    background-color: var(--amd-color);
+}
+
+.package.arm::before {
+    background-color: var(--arm-color);
+}
+
+.package:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.special-package {
+    border: 2px solid var(--accent-color);
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+input, select {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--input-border);
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    flex: 1;
+    min-width: 120px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(15, 52, 96, 0.2);
+}
+
+button {
+    background-color: var(--btn-color);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background-color: var(--btn-hover);
+    transform: translateY(-2px);
+}
+
+.delete-btn {
+    background-color: var(--delete-btn);
+}
+
+.delete-btn:hover {
+    background-color: var(--delete-btn-hover);
+}
+
+.add-provider-form, .add-package-form, .add-special-package-form {
+    background-color: var(--secondary-color);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.packages, .special-packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.package p {
+    margin: 8px 0;
+    font-size: 0.9em;
+}
+
+.package h4 {
+    margin-top: 0;
+    font-size: 1.2em;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input, select, button {
+        width: 100%;
+    }
+
+    .packages, .special-packages {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animacje */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.provider, .package {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Dodatkowe style dla poprawy czytelności */
+.delete-provider-form {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.delete-package-form {
+    margin-top: 15px;
+}
+
+/* Stylizacja pól formularza */
+input::placeholder, select {
+    color: #a0a0a0;
+}
+
+/* Efekt hover dla pakietów */
+.package:hover h4 {
+    color: var(--accent-color);
+}
+
+/* Stylizacja nagłówków sekcji */
+.add-package-form h3, .add-special-package-form h3 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Dodatkowe style dla wyróżnienia typów procesorów */
+.package.intel h4 {
+    color: var(--intel-color);
+}
+
+.package.amd h4 {
+    color: var(--amd-color);
+}
+
+.package.arm h4 {
+    color: var(--arm-color);
+}

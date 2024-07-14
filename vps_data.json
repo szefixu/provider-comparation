@@ -1,0 +1,154 @@
+{
+    "dostawcy": [
+        {
+            "nazwa": "OVH Cloud",
+            "pakiety": [
+                {
+                    "nazwa": "Advance-1",
+                    "vCPU": 12,
+                    "RAM": 32,
+                    "dysk": 19200,
+                    "cena": {
+                        "monthly": 456,
+                        "quarterly": 1368,
+                        "semi_annually": 2736,
+                        "annually": 5472
+                    },
+                    "waluta": "PLN",
+                    "procesor_typ": "AMD",
+                    "procesor_nazwa": "EPYC 4244P"
+                },
+                {
+                    "nazwa": "Advance-2",
+                    "vCPU": 16,
+                    "RAM": 64,
+                    "dysk": 1920,
+                    "cena": {
+                        "monthly": 644,
+                        "quarterly": 1932,
+                        "semi_annually": 3864,
+                        "annually": 7728
+                    },
+                    "waluta": "PLN",
+                    "procesor_typ": "AMD",
+                    "procesor_nazwa": "AMD EPYC 4344P"
+                },
+                {
+                    "nazwa": "Advance-3",
+                    "vCPU": 24,
+                    "RAM": 64,
+                    "dysk": 1920,
+                    "cena": {
+                        "monthly": 802,
+                        "quarterly": 2406,
+                        "semi_annually": 4812,
+                        "annually": 9624
+                    },
+                    "waluta": "PLN",
+                    "procesor_typ": "AMD",
+                    "procesor_nazwa": "AMD EPYC 4464P"
+                },
+                {
+                    "nazwa": "Advance-4",
+                    "vCPU": 32,
+                    "RAM": 64,
+                    "dysk": 1920,
+                    "cena": {
+                        "monthly": 1074,
+                        "quarterly": 3222,
+                        "semi_annually": 6444,
+                        "annually": 12888
+                    },
+                    "waluta": "PLN",
+                    "procesor_typ": "AMD",
+                    "procesor_nazwa": "AMD EPYC 4584PX"
+                },
+                {
+                    "nazwa": "Scale-i2",
+                    "vCPU": 48,
+                    "RAM": 128,
+                    "dysk": 1920,
+                    "cena": {
+                        "monthly": 2227,
+                        "quarterly": 6681,
+                        "semi_annually": 13362,
+                        "annually": 26724
+                    },
+                    "waluta": "PLN",
+                    "procesor_typ": "Intel",
+                    "procesor_nazwa": "Intel Xeon Gold 6442Y"
+                }
+            ],
+            "pakiety_specjalne": []
+        },
+        {
+            "nazwa": "OVH VPS",
+            "pakiety": [
+                {
+                    "nazwa": "VLE-2",
+                    "vCPU": 2,
+                    "RAM": 2,
+                    "dysk": 40,
+                    "cena": {
+                        "monthly": 27,
+                        "quarterly": 81,
+                        "semi_annually": 162,
+                        "annually": 324
+                    },
+                    "waluta": "PLN",
+                    "procesor_typ": "Intel",
+                    "procesor_nazwa": "idk"
+                },
+                {
+                    "nazwa": "Essential",
+                    "vCPU": 2,
+                    "RAM": 4,
+                    "dysk": 80,
+                    "cena": {
+                        "monthly": 63,
+                        "quarterly": 189,
+                        "semi_annually": 378,
+                        "annually": 756
+                    },
+                    "waluta": "PLN",
+                    "procesor_typ": "ARM",
+                    "procesor_nazwa": "idk"
+                }
+            ],
+            "pakiety_specjalne": [
+                {
+                    "nazwa": "Elite",
+                    "vCPU": 8,
+                    "RAM": 8,
+                    "dysk": 160,
+                    "cena": {
+                        "monthly": 170,
+                        "quarterly": 510,
+                        "semi_annually": 1020,
+                        "annually": 2040
+                    },
+                    "waluta": "PLN",
+                    "procesor_typ": "Intel",
+                    "procesor_nazwa": "idk",
+                    "ograniczenie": "czasowe"
+                },
+                {
+                    "nazwa": "Comfort",
+                    "vCPU": 4,
+                    "RAM": 8,
+                    "dysk": 160,
+                    "cena": {
+                        "monthly": 116,
+                        "quarterly": 348,
+                        "semi_annually": 696,
+                        "annually": 1392
+                    },
+                    "waluta": "PLN",
+                    "procesor_typ": "ARM",
+                    "procesor_nazwa": "idk",
+                    "ograniczenie": "czasowe"
+                }
+            ]
+        }
+    ]
+}

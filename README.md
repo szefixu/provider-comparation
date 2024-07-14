@@ -6,4 +6,4 @@ Strona dzięki które porównasz łatwo sobie pakiety dostawców, poda ci najlep
 
 https://imgur.com/a/GylpYCq
 
-[img]https://i.imgur.com/N71KmbZ.png[/img]
+[Imgur](https://imgur.com/N71KmbZ)

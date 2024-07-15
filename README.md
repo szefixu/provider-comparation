@@ -1,8 +1,9 @@
 # provider-comparation
-Website where you can add packages from different providers and check with one is best price for ram/cpu/overall
+- EN:
+I made this website to compare prices from VPS/Dedicated providers and it works and look not that bad, feel free to use it. I've made it with AI ofc.
 
-Polska:
-Strona dzięki które porównasz łatwo sobie pakiety dostawców, poda ci najlepsze pakiety wszystykich dostawców względem ceny RAM/CPU/Ogólnej
+- Polska:
+Strona dzięki które porównasz łatwo sobie pakiety dostawców, poda ci najlepsze pakiety wszystykich dostawców względem ceny RAM/CPU/Ogólnej. Strona zrobiona przy pomocy AI.
 
 https://imgur.com/a/GylpYCq
 
